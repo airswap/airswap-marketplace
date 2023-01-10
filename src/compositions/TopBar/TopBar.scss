@@ -10,6 +10,7 @@ $component: top-bar;
     height: var(--top-bar-height);
     padding: 0.5rem;
     background: var(--c-grey);
+    position: relative;
 
     @include for-size(tablet-portrait-up) {
         height: var(--desktop-top-bar-height);
@@ -28,6 +29,14 @@ $component: top-bar;
             border-color: var(--c-grey);
             height: 2.5rem;
             font-size: .9375rem;
+        }
+    }
+
+    &--mobile-menu-is-visible {
+        background: var(--c-black);
+
+        .#{$component}__menu-button-icon {
+            width: .875rem;   
         }
     }
 

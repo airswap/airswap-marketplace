@@ -1,0 +1,37 @@
+@import "src/styles";
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  &--is-menu {
+    background-color: var(--c-dark);
+    border: 1px solid var(--c-dark-border);
+    border-radius: .3125rem;
+  }
+
+  &--is-banner {
+    background-color: var(--c-grey);
+  }
+   
+  &__img { 
+    min-width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid gray; //temp css, replace later by a generate img from address
+  }
+
+  &__address {
+    @extend %text-ellipsis;
+
+    margin-left: 0.875rem;
+    flex-grow: 1;
+    font-weight: var(--fw-700);
+  }
+  
+  &__icon {
+    color: var(--c-white);
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

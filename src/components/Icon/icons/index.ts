@@ -21,8 +21,10 @@ import IconDiscord from './IconDiscord';
 import IconEdit from './IconEdit';
 import IconForbidden from './IconForbidden';
 import IconGithub from './IconGithub';
+import IconLaunch from './IconLaunch';
 import IconLibrary from './IconLibrary';
 import IconLink from './IconLink';
+import IconLogout from './IconLogout';
 import IconMedium from './IconMedium';
 import IconMenu from './IconMenu';
 import IconPending from './IconPending';
@@ -60,8 +62,10 @@ export {
   IconEdit,
   IconForbidden,
   IconGithub,
+  IconLaunch,
   IconLibrary,
   IconLink,
+  IconLogout,
   IconMedium,
   IconMenu,
   IconPending,

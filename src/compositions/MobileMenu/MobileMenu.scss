@@ -1,0 +1,37 @@
+@import "src/styles/index";
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    font-weight: var(--fw-700);
+    background-color: var(--c-black);
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+    overflow-y: auto;
+    
+    &--is-hidden {
+        transform: translateY(-100vh);
+    }
+
+    &__nav-links {
+        margin-top: 1.5rem;
+    }
+
+    &__nav-link {
+        @extend %button;
+
+        justify-content: flex-start;
+        border: 1px solid transparent;
+        font-weight: 700;
+        color: var(--c-white);
+
+        &:focus {
+            border-color: var(--c-primary);
+        }
+
+        & + & {
+            margin-top: .5rem;
+        }
+    }
+}
